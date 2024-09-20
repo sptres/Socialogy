@@ -1,19 +1,19 @@
 import Post from '../models/Post.js';
 import User from '../models/User.js';
 
-// Create
+/* CREATE */
 export const createPost = async (req, res) => {
   try {
     const { userId, description, picturePath } = req.body;
     const user = await User.findById(userId);
     const newPost = new Post({
-      userId: user._id,
+      userId,
       firstName: user.firstName,
       lastName: user.lastName,
       location: user.location,
       description,
-      picturePath,
       userPicturePath: user.picturePath,
+      picturePath,
       likes: {},
       comments: [],
     });
@@ -26,7 +26,7 @@ export const createPost = async (req, res) => {
   }
 };
 
-// Read
+/* READ */
 export const getFeedPosts = async (req, res) => {
   try {
     const post = await Post.find();
@@ -46,7 +46,7 @@ export const getUserPosts = async (req, res) => {
   }
 };
 
-// Update
+/* UPDATE */
 export const likePost = async (req, res) => {
   try {
     const { id } = req.params;
