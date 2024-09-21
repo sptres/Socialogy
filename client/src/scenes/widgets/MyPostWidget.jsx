@@ -4,7 +4,6 @@ import {
   AttachFileOutlined,
   GifBoxOutlined,
   ImageOutlined,
-  MicOutlined,
   MoreHorizOutlined,
 } from '@mui/icons-material';
 import {
@@ -62,7 +61,7 @@ const MyPostWidget = ({ picturePath }) => {
       <FlexBetween gap="1.5rem">
         <UserImage image={picturePath} />
         <InputBase
-          placeholder="What's on your mind..."
+          placeholder="I'm thinking..."
           onChange={(e) => setPost(e.target.value)}
           value={post}
           sx={{
@@ -141,11 +140,6 @@ const MyPostWidget = ({ picturePath }) => {
             <FlexBetween gap="0.25rem">
               <AttachFileOutlined sx={{ color: mediumMain }} />
               <Typography color={mediumMain}>Attachment</Typography>
-            </FlexBetween>
-
-            <FlexBetween gap="0.25rem">
-              <MicOutlined sx={{ color: mediumMain }} />
-              <Typography color={mediumMain}>Audio</Typography>
             </FlexBetween>
           </>
         ) : (

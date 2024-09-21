@@ -17,19 +17,18 @@ const AdvertWidget = () => {
         <Typography color={medium}>Create Ad</Typography>
       </FlexBetween>
       <img
-        src="http://localhost:3001/assets/info4.jpeg"
+        src="http://localhost:3001/assets/nike.webp"
         alt="advert"
         width="100%"
         height="auto"
         style={{ borderRadius: '0.75rem', margin: '0.75rem 0' }}
       />
       <FlexBetween>
-        <Typography color={main}>MikaCosmetics</Typography>
-        <Typography color={medium}>mikacosmetics.com</Typography>
+        <Typography color={main}>Nike</Typography>
+        <Typography color={medium}>Nike.com</Typography>
       </FlexBetween>
       <Typography color={medium} m="0.5rem 0">
-        Your pathway to stunning and immaculate beauty and made sure your skin
-        is smooth
+        Stand for something. Even if it means standing alone. Just do it.
       </Typography>
     </WidgetWrapper>
   );

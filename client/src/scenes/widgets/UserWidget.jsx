@@ -112,22 +112,24 @@ const UserWidget = ({ userId, picturePath }) => {
       {/* Fourth  row */}
       <Box p="1rem 0">
         <Typography fontSize="1rem" color={main} fontWeight="500" mb="1rem">
-          Social Profiles
+          Find Me Here
         </Typography>
-
         <FlexBetween gap="1rem" mb="0.5rem">
           <FlexBetween gap="1rem">
-            <img src="../assets/twitter.png" alt="twitter" />
+            <img
+              src="../assets/x.jpg"
+              alt="x"
+              style={{ width: '26px', height: '26px' }}
+            />
             <Box>
               <Typography color={main} fontWeight="500">
-                Twitter
+                X
               </Typography>
-              <Typography color={medium}>Social Platform</Typography>
+              <Typography color={medium}>Social</Typography>
             </Box>
           </FlexBetween>
           <EditOutlined sx={{ color: main }} />
         </FlexBetween>
-
         <FlexBetween gap="1rem">
           <FlexBetween gap="1rem">
             <img src="../assets/linkedin.png" alt="linkedin" />
@@ -135,7 +137,24 @@ const UserWidget = ({ userId, picturePath }) => {
               <Typography color={main} fontWeight="500">
                 LinkedIn
               </Typography>
-              <Typography color={medium}>Network Platform</Typography>
+              <Typography color={medium}>Network</Typography>
+            </Box>
+          </FlexBetween>
+          <EditOutlined sx={{ color: main }} />
+        </FlexBetween>
+
+        <FlexBetween gap="1rem">
+          <FlexBetween gap="1rem">
+            <img
+              src="../assets/instagram.jpg"
+              alt="instagram"
+              style={{ width: '26px', height: '26px' }}
+            />
+            <Box>
+              <Typography color={main} fontWeight="500">
+                Instagram
+              </Typography>
+              <Typography color={medium}>Photo Sharing</Typography>
             </Box>
           </FlexBetween>
           <EditOutlined sx={{ color: main }} />
