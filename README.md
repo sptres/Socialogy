@@ -1,7 +1,10 @@
-
 # 30social
 
 30social is a Twitter clone app built using modern web technologies to provide a real-time social media experience, where users can create posts, interact with others, and stay connected. The app features user authentication, secure storage, and a responsive user interface.
+
+## Demo
+
+![30social demo](./demo.jpg)
 
 ## Features
 
@@ -16,6 +19,7 @@
 ## Tech Stack
 
 ### Client Side
+
 - **React**: ^18.3.1
 - **Redux** (with Redux Toolkit): ^2.2.7
 - **Material-UI** (MUI): ^6.1.1
@@ -26,6 +30,7 @@
 - **React Dropzone**: ^14.2.3
 
 ### Server Side
+
 - **Express**: ^4.21.0
 - **MongoDB** with **Mongoose**: ^8.6.3
 - **JWT** (JSON Web Token): ^9.0.2
@@ -38,10 +43,12 @@
 ## Installation
 
 ### Prerequisites
+
 - Node.js
 - MongoDB
 
 ### Client Side Setup
+
 1. Navigate to the `client` directory.
 2. Install dependencies:
    ```bash
@@ -53,6 +60,7 @@
    ```
 
 ### Server Side Setup
+
 1. Navigate to the `server` directory.
 2. Install dependencies:
    ```bash
@@ -64,7 +72,9 @@
    ```
 
 ## Usage
+
 - After setting up both the client and server, navigate to `http://localhost:3000` to access the application.
 
 ## License
+
 This project is licensed under the ISC License.
